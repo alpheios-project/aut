@@ -1,0 +1,110 @@
+In <entryFree id="n10" type="main" key="Ἄβας">
+    "dream - reader" -> "dream-reader"
+
+Missing breathing mark:
+    <entryFree n="n87" type="main" key="ἀγκρεμάσασα"><orth extent="full"
+        lang="greek">ἀγ-κρεμάσᾶσα</orth>: see <quote lang="greek"
+        >ανακρεμάννῦμι</quote>.</entryFree>
+    ανακρεμάννῦμι should be ἀνακρεμάννυμι
+    (? but note further accent discrepancy on υ)
+    Note: Appears thus in print original.
+
+Missing entry at end for Ops.  Added:
+    <entryFree id="n9823" type="main" key="*)wy">
+      <orth extent="full" lang="greek">*)=wy</orth>: <gloss>Ops</gloss>, 
+      son of Pisēnor, father of Euryclēa, 
+      <bibl n="Hom. Od. 1.429">Od. 1.429</bibl>, 
+      <bibl n="Hom. Od. 2.347">Od. 2.347</bibl>,
+      <bibl n="Hom. Od. 20.148">Od. 20.148</bibl>.</entryFree>
+
+Betacode error: = (circumflex) should be _ (long vowel)
+  Changed all instances of "/=" to "/_"
+  Changed all instances of "=/" to "_/"
+  Would like in all cases where <entryFree> key has no "=" and "=" does
+  appear in <orth> to change "=" in <orth> to "_".
+  Unfortunately, this is not safe - see 
+    <entryFree type="main" key="fh/|s">
+    <orth extent="full" lang="greek">fh/|s, fh=s, fh=|sqa, fh=sqa</orth>
+  All three "=" in <orth> are true circumflexes.
+
+    <entryFree id="n3351" type="main" key="e)pai+/ssw">
+    ...
+    inf. <quote lang="greek">-a=i=cai</quote>, mid. <quote lang="greek"
+  Entry has consecutive letters (!) with miscoded long and correct circumflex.
+  Should be 
+    inf. <quote lang="greek">-a_i=cai</quote>, mid. <quote lang="greek"
+
+
+
+misread character:
+    <entryFree id="n9813" type="main" key="w(/sper">
+    ...
+    as, even as;</gloss> often separated by an intervening &lt;*&gt;ord,
+  Should be "intervening word"
+
+References to number lemmas are misinterpreted:
+  E.g., lemmas e)/peimi1 and e)/peimi2.
+    see e)/peimi 1
+  is transcribed as
+    see <quote lang="greek">e)/peim</quote>
+    <bibl n="Hom. Od. 9.1">Od. 9.1</bibl>
+  (that is, "iota 1" is taken as a text reference.)
+  Lemmas:
+    a(/lios
+    au)/w
+    dai/w
+    de/w
+    ei)/rw
+    e)/peimi
+    e(/rma
+    e)/ceimi
+    qa/omai
+    klei/w
+    li/s
+    me/teimi
+    mna/omai
+    ne/w
+    o(/s
+    ou)_los
+    ou)_ros
+    pa/reimi
+    pera/w
+    xra/w
+    w(s
+
+Some erroneous refs still remain, esp. refs to books without line no.
+    <entryFree id="n2" type="main" key="a)a/atos">
+    ...
+    22.5</bibl>). &mdash;Signif. (2) may be assumed in <quote
+    lang="greek">*c</quote> instead of (1), representing the Styx as
+  Should be "(2) may be assumed in <bibl n="Hom. Il. 14">Il. 14</bibl>..." ?
+
+    <entryFree id="n6067" type="main" key="me/llw">
+    ...
+    pres., rarely aor., <quote lang="greek">*y</quote>
+    <pb n="186"/> 773; <quote lang="greek">me/llw</quote> never means to
+  should be
+    pres., rarely aor., <bibl n="Hom. Il. 23.773">Il. 23.773</bibl>;
+    <pb n="186"/><quote ...
+
+    n6125 <pb>
+    n7325
+
+Various undeciphered characters represented by <*> can be fixed.
+  Often in place of or following what should be a long vowel in Latin text.
+
+Multiple references in the same Il/Od chapter are sometimes not handled.
+  For example:
+    <entryFree id="n3601" type="main" key="e)piproi/hmi">
+    ...
+    <bibl n="Hom. Il. 18.58">Il. 18.58</bibl>, 439;
+  should be
+    <bibl n="Hom. Il. 18.58">Il. 18.58</bibl>, 
+    <bibl n="Hom. Il. 18.439">439</bibl>;
+
+Notational deficiency?  For line ranges in text, the <bibl> n attribute only
+specifies the first line, not the range.
+  For example:
+    <entryFree id="n36" type="main" key="*)agame/mnwn">
+    ...
+    <bibl n="Hom. Od. 4.512">512-537</bibl>
